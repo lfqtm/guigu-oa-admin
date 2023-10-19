@@ -38,5 +38,11 @@ export default {
       url: `${api_name}/remove/${id}`,
       method: 'delete'
     })
+  },
+  updateStatus(id, status) {
+    return request({
+      url: `${api_name}/updateStatus/${id}/${status}`,
+      method: 'get'
+    })
   }
 }
