@@ -36,7 +36,7 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    //before: require('./mock/mock-server.js')
+    // before: require('./mock/mock-server.js')
     proxy: {
       '/dev-api': { // 匹配所有以 '/dev-api'开头的请求路径
         target: 'http://localhost:8800',
